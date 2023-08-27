@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IC</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/3132/3132772.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/win.css" /><!--Estilo da tela de vitória-->
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DysLEK GAME - Nível 1</h1>
+      <nav>
+        <!--<a href="/">DECKS</a>
+        <a href="/">SOBRE</a>-->
+      </nav>
+    </header>
+    <!--ALTERAÇÃO* Essa div vai ser exibida quando o jogador vencer a partida!-->
+    <div id="fim-de-jogo">
+      <div id="container">
+        <h1>Ebaaa!</h1>
+        <br>
+        <p>PARABÉNS! VOCÊ ACERTOU TODAS AS RIMAS COM UM TOTAL DE: </p>
+        <h2><span id="movimentosfim-de-jogo">0</span> ERROS</h2>
+        <p>CONFIRA MAIS NÍVEIS DO DYSLEK GAME! :) </p>
+        <br> <br>
+        <a class="botao" href="index.html">Nível 1</a>
+        <a class="botao" href="niveis/nivel2.html">Nível 2</a>
+        <a class="botao" href="niveis/nivel3.html">Nível 3</a>
+        <a class="botao" href="niveis/revisao.html">Revisão</a>
+      </div>
+    </div>
+    <div id="menu">
+      <div id="container">
+        <h1>MENU</h1>
+        <h2>Confira abaixo mais níveis do Dyslek Game! :)</h2>
+        <br> <br>
+        <a class="botao" href="index.html">Nível 1</a>
+        <a class="botao" href="niveis/nivel2.html">Nível 2</a>
+        <a class="botao" href="niveis/nivel3.html">Nível 3</a>
+        <a class="botao" href="niveis/revisao.html">Revisão</a>
+      </div>
+    </div>
+    
+    <!--FIM-ALTERAÇÃO*-->
+    <section id="responsivo">
+      <h2>Erros <span id="movimentos2">0</span></h2>
+      <!-- <button id="btn-mudartema">Mudar tema</button>
+          <button id="btn-reiniciar">Reiniciar</button> -->
+          
+      <a href="index.html">Reiniciar</a>
+    </section>
+
+    <div class="corpo">
+      <section id="esq">
+        <h2 class="titulo magenta">Pontuação: <span id="movimentos">0</span></h2>
+        <br><h2 class="titulo">Explicação </h2>
+         <h2> Rima é a repetição de sons semelhantes no final de cada palavra, <br> ela proporciona sonoridade, ritmo e musicalidade.
+          <br><h2 class="titulo">Exemplo </h2>
+          <h2>Cadeira rima com Mamadeira, pois as duas terminam com "eira"
+            <br><h2 class="titulo">Como jogar?</h2>
+            <h2> Agrupe em pares todas as RIMAS nas cartas ao lado ------><br><br><br>
+          </h2>
+        <!-- <button id="btn-mudartema">Mudar tema</button>
+            <button id="btn-reiniciar">Reiniciar</button> -->
+        <a id="myBtn">Menu</a>
+      </section>
+      <section class="jogo">
+        <div class="card" data-nome = "azul">
+          <h2 class="frente">CO<span class="magenta">LA</span></h2>
+          <h2 class="verso">CO<span class="magenta">LA</span></h2>
+        </div>
+        <div class="card" data-nome = "azul">
+          <h2 class="frente">BO<span class="magenta">LA</span></h2>
+          <h2 class="verso">BO<span class="magenta">LA</span></h2>
+        </div>
+        <div class="card" data-nome = "vermelho">
+          <h2 class="frente">VAS<span class="magenta">SOURA</span></h2>
+          <h2 class="verso">VAS<span class="magenta">SOURA</span></h2>
+        </div>
+        <div class="card" data-nome = "vermelho">
+          <h2 class="frente">TE<span class="magenta">SOURA</span></h2>
+          <h2 class="verso">TE<span class="magenta">SOURA</span></h2>
+        </div>
+        <div class="card" data-nome = "rosa">
+          <h2 class="frente">D<span class="magenta">ENTE</span></h2>
+          <h2 class="verso">D<span class="magenta">ENTE</span></h2>
+        </div>
+        <div class="card" data-nome = "rosa">
+          <h2 class="frente">PRES<span class="magenta">ENTE</span></h2>
+          <h2 class="verso">PRES<span class="magenta">ENTE</span></h2>
+        </div>
+        <div class="card" data-nome = "verde">
+          <h2 class="frente">PISC<span class="magenta">INA</span></h2>
+          <h2 class="verso">PISC<span class="magenta">INA</span></h2>
+        </div>
+        <div class="card" data-nome = "verde">
+          <h2 class="frente">BUZ<span class="magenta">INA</span></h2>
+          <h2 class="verso">BUZ<span class="magenta">INA</span></h2>
+        </div>
+        <div class="card" data-nome = "lilas">
+          <h2 class="frente">MAR<span class="magenta">TELO</span></h2>
+          <h2 class="verso">MAR<span class="magenta">TELO</span></h2>
+        </div>
+        <div class="card" data-nome = "lilas">
+          <h2 class="frente">CAS<span class="magenta">TELO</span></h2>
+          <h2 class="verso">CAS<span class="magenta">TELO</span></h2>
+        </div>
+        <div class="card" data-nome = "amarelo">
+          <h2 class="frente">JA<span class="magenta">NELA</span></h2>
+          <h2 class="verso">JA<span class="magenta">NELA</span></h2>
+        </div>
+        <div class="card" data-nome = "amarelo">
+          <h2 class="frente">PA<span class="magenta">NELA</span></h2>
+          <h2 class="verso">PA<span class="magenta">NELA</span></h2>
+        </div>
+      </section>
+      <section id="dir"></section>
+    </div>
+    <footer>
+      <ul>
+        <li><h3>Alan Oliveira</h3></li>
+        <li>
+          <a href="https://github.com/alanaug"
+            ><img src="src/github.svg" alt="github" width="50px" height="50px"
+          /></a>
+        </li>
+        <li><h3>@alanaug</h3></li>
+      </ul>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
