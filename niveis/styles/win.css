@@ -2,7 +2,7 @@
     font-family: 'Open-Dyslexic', cursive;
 }
 
-#fim-de-jogo, #menu {
+#fim-de-jogo, #menu, #instrucoes {
     display: flex;
     position: fixed;
     text-align: center;
@@ -15,17 +15,17 @@
     display: none;
 }
 
-#fim-de-jogo h1, #menu h1 {
+#fim-de-jogo h1, #menu h1, #instrucoes {
     font-size: 4em;
     font-weight: normal;
 }
 
-#fim-de-jogo h2, #menu h2 {
+#fim-de-jogo h2, #menu h2, #instrucoes {
     font-size: 2em;
     margin: 1em;
 }
 
-#fim-de-jogo a, #menu a {
+#fim-de-jogo a, #menu a, #instrucoes {
     text-decoration: none;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
@@ -36,16 +36,16 @@
     width: fit-content;
 }
 
-#fim-de-jogo a:hover, #menu a:hover {
+#fim-de-jogo a:hover, #menu a:hover, #instrucoes a:hover {
     background-color: #F75E75;
     color: rgb(255, 255, 255);
 }
 
-#fim-de-jogo p, #menu p {
+#fim-de-jogo p, #menu p, #instrucoes p {
     color: rgb(50, 50, 50);
 }
 
-#fim-de-jogo #container, #menu #container{
+#fim-de-jogo #container, #menu #container, #instrucoes #container{
     background: aliceblue;
     padding: 50px;
     width: 80%;

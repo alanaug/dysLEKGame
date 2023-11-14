@@ -88,7 +88,7 @@ if(window.SpeechRecognition || window.webkitSpeechRecognition){
     if(transcricaoAudio ===  respostaCorreta){
       atualizaPontuacao(1);
     }else{
-      atualizaPontuacao(-1);
+      atualizaPontuacao(2);
     }
 
     aplicarCorNaCaixa(sortearCor());
